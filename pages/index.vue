@@ -1,34 +1,27 @@
 <template>
   <div class="container">
     <div>
-      <Logo />
-      <h1 class="title">
-        dadjoks
-      </h1>
-      <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--green"
-        >
-          Documentation
-        </a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--grey"
-        >
-          GitHub
-        </a>
-      </div>
-    </div>
+      <h1>Welcome to Dad Jokes</h1>
+    </div> 
   </div>
 </template>
 
 <script>
-export default {}
+export default {
+  
+    head() {
+    return {
+      title: "welcome to dad joks",
+      meta: [
+        {
+          hid: "description",
+          name: "description",
+          content: "The best place fot dad jokes",
+        },
+      ],
+    };
+  }
+}
 </script>
 
 <style>
